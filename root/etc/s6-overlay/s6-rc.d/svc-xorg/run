@@ -1,4 +1,5 @@
 #!/usr/bin/with-contenv bash
+# shellcheck shell=bash
 
 # bail early on wayland
 if [[ "${PIXELFLUX_WAYLAND,,}" == "true" ]]; then
