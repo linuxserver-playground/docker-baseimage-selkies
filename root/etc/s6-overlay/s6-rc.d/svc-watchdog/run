@@ -1,4 +1,5 @@
 #!/usr/bin/with-contenv bash
+# shellcheck shell=bash
 
 if [[ ${RESTART_APP,,} != "true" ]]; then
   exec sleep infinity

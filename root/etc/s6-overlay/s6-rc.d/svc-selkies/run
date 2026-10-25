@@ -1,4 +1,5 @@
 #!/usr/bin/with-contenv bash
+# shellcheck shell=bash
 
 export XCURSOR_THEME=breeze_cursors
 
