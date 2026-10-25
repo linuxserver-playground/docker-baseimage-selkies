@@ -1,4 +1,5 @@
 #!/usr/bin/with-contenv bash
+# shellcheck shell=bash
 
 # Make sure this is a priv container
 if [ -e /dev/cpu_dma_latency ]; then

@@ -1,4 +1,5 @@
 #!/usr/bin/with-contenv bash
+# shellcheck shell=bash
 
 # exit early if no pid file
 PID_FILE="/de-pid"
