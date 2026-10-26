@@ -13,6 +13,21 @@ release:
   branch: master
   tag: debiantrixie
   channel: prerelease
+  tags:
+  - tag: debiantrixie
+    description: Debian 13 Trixie desktop base.
+  - tag: alpine324
+    description: Alpine 3.24 desktop base.
+  - tag: arch
+    description: Arch Linux desktop base.
+  - tag: fedora44
+    description: Fedora 44 desktop base.
+  - tag: kali
+    description: Kali Linux desktop base.
+  - tag: ubunturesolute
+    description: Ubuntu 26.04 Resolute desktop base.
+  - tag: dev
+    description: Development builds for testing upcoming changes. Unstable.
 
 build:
   base: alpine
