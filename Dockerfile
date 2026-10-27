@@ -360,9 +360,9 @@ RUN \
 COPY /root /
 COPY --from=frontend /buildout /usr/share/selkies
 COPY --from=interposers /buildout /
-COPY --from=ghcr.io/linuxserver/selkies-layers:amd64-fedora44-xvfb / /
-COPY --from=ghcr.io/linuxserver/selkies-layers:amd64-fedora44-wtype / /
-COPY --from=ghcr.io/linuxserver/selkies-layers:amd64-fedora44-labwc / /
+COPY --from=ghcr.io/linuxserver-playground/selkies-layers:amd64-fedora44-xvfb / /
+COPY --from=ghcr.io/linuxserver-playground/selkies-layers:amd64-fedora44-wtype / /
+COPY --from=ghcr.io/linuxserver-playground/selkies-layers:amd64-fedora44-labwc / /
 
 # ports and volumes
 EXPOSE 3000 3001
