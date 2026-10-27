@@ -351,9 +351,9 @@ RUN \
 COPY /root /
 COPY --from=frontend /buildout /usr/share/selkies
 COPY --from=interposers /buildout /
-COPY --from=ghcr.io/linuxserver/selkies-layers:arm64v8-debiantrixie-xvfb / /
-COPY --from=ghcr.io/linuxserver/selkies-layers:arm64v8-debiantrixie-wtype / /
-COPY --from=ghcr.io/linuxserver/selkies-layers:arm64v8-debiantrixie-labwc / /
+COPY --from=ghcr.io/linuxserver-playground/selkies-layers:arm64v8-debiantrixie-xvfb / /
+COPY --from=ghcr.io/linuxserver-playground/selkies-layers:arm64v8-debiantrixie-wtype / /
+COPY --from=ghcr.io/linuxserver-playground/selkies-layers:arm64v8-debiantrixie-labwc / /
 
 # ports and volumes
 EXPOSE 3000 3001
