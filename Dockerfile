@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM ghcr.io/linuxserver/baseimage-alpine:3.24 AS frontend
+FROM ghcr.io/linuxserver-playground/baseimage-alpine:3.24 AS frontend
 
 ARG SELKIES_RELEASE=2.1.0
 
@@ -38,7 +38,7 @@ RUN \
     cp -ar dist/* /buildout/$DASH/; \
   done
 
-FROM ghcr.io/linuxserver/baseimage-fedora:44 AS interposers
+FROM ghcr.io/linuxserver-playground/baseimage-fedora:44 AS interposers
 
 ARG SELKIES_RELEASE=2.1.0
 
@@ -98,7 +98,7 @@ RUN \
     /buildout/opt/lib/libudev.so.1.0.0-fake_32
 
 # Runtime stage
-FROM ghcr.io/linuxserver/baseimage-fedora:44
+FROM ghcr.io/linuxserver-playground/baseimage-fedora:44
 
 # set version label
 ARG BUILD_DATE
