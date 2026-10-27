@@ -352,9 +352,9 @@ RUN \
 COPY /root /
 COPY --from=frontend /buildout /usr/share/selkies
 COPY --from=interposers /buildout /
-COPY --from=ghcr.io/linuxserver/selkies-layers:arm64v8-kali-xvfb / /
-COPY --from=ghcr.io/linuxserver/selkies-layers:arm64v8-kali-wtype / /
-COPY --from=ghcr.io/linuxserver/selkies-layers:arm64v8-kali-labwc / /
+COPY --from=ghcr.io/linuxserver-playground/selkies-layers:arm64v8-kali-xvfb / /
+COPY --from=ghcr.io/linuxserver-playground/selkies-layers:arm64v8-kali-wtype / /
+COPY --from=ghcr.io/linuxserver-playground/selkies-layers:arm64v8-kali-labwc / /
 
 # ports and volumes
 EXPOSE 3000 3001
