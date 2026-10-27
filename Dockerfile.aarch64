@@ -350,9 +350,9 @@ RUN \
 COPY /root /
 COPY --from=frontend /buildout /usr/share/selkies
 COPY --from=interposers /buildout /
-COPY --from=ghcr.io/linuxserver/selkies-layers:arm64v8-ubunturesolute-xvfb / /
-COPY --from=ghcr.io/linuxserver/selkies-layers:arm64v8-ubunturesolute-wtype / /
-COPY --from=ghcr.io/linuxserver/selkies-layers:arm64v8-ubunturesolute-labwc / /
+COPY --from=ghcr.io/linuxserver-playground/selkies-layers:arm64v8-ubunturesolute-xvfb / /
+COPY --from=ghcr.io/linuxserver-playground/selkies-layers:arm64v8-ubunturesolute-wtype / /
+COPY --from=ghcr.io/linuxserver-playground/selkies-layers:arm64v8-ubunturesolute-labwc / /
 
 # ports and volumes
 EXPOSE 3000 3001
